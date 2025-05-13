@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your name  | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Archana Racharla</h1>
+    <nav class="nav-boxes">
+      <a href="#home"><div class=box>🏠 Home</div></a>
+      <a href="#about"><div class=box>👤 About</div></a>
+      <a href="#skills"><div class=box>🛠️ Skills</div></a>
+      <a href="#projects"><div class=box>📁 Projects</div></a>
+      <a href="#contact"><div class=box>📬 Contact</div></a>
+    </nav>
+     
+    <a href="Racharla.Archana-Resume.pdf" download class="download-btn">Download Resume</a>
+
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <section id="welcome" data-aos="fade-up">
+    <h2><mark>Welcome to My Portfolio</mark></h2>
+    <p>
+      Hi there, and thanks for visiting! This is a place where I showcase my journey as a software engineer. From developing clean, efficient code to creating full-stack applications, you'll find a collection of projects that reflect my skills and passion for technology.
+    </p>
+    <p>
+      I believe in continuous learning, and this portfolio highlights the work that demonstrates my expertise in Core Java, Spring Framework, and full-stack web development. Each project is a step toward solving real-world problems through innovative solutions.
+    </p>
+    <p>
+      Take your time to explore, and if you have any questions or would like to collaborate, don’t hesitate to reach out. I look forward to connecting with you!
+    </p>
+    <p><a href="#contact">Let's Connect</a></p>
+  </section>
+  
+
+  <section id="about" data-aos="fade-up">
+    <h2><mark>About Me</mark></h2>
+    <p>
+      Hello! I’m Racharla Archana, an aspiring software engineer with a solid foundation in Core Java, Spring Framework, and full-stack web development. With a Bachelor’s degree in Mathematics, Statistics, and Computer Science, I’ve cultivated a strong analytical and technical mindset.
+    </p>
+    <p>
+      I recently worked as a Technical Support Engineer at Gigmo Solutions Pvt Ltd, where I managed Office 365 environments and improved support ticket resolution by 30%. I’m now looking to apply my skills in a dynamic development role where I can solve real-world problems through clean and efficient code.
+    </p>
+    <p>
+      Outside of tech, I enjoy dancing, singing, and sketching — and I love giving technical presentations!
+    </p>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2><mark> Skills</mark></h2>
+    <ul style="list-style-type:none;">
+      <li>✔️ Programming: Core Java</li>
+      <li>✔️ Web Development: HTML, CSS, JavaScript, JSP, Servlets</li>
+      <li>✔️ Frameworks: Spring Framework (3-layer architecture)</li>
+      <li>✔️ Database: MySQL, JDBC</li>
+      <li>✔️ Tools: Postman, Visual Studio Code, Eclipse</li>
+      <li>✔️ Platforms: Windows, Office 365, Active Directory</li>
+    </ul>
+  </section>
+  
+  <section id="projects" data-aos="fade-up">
+ <h2><mark>Projects</mark></h2>
+  
+    <div class="project">
+      <h3>Responsive Portfolio Website</h3>
+      <p>This portfolio itself is a live demonstration of my HTML, CSS, and JavaScript skills. It includes mobile responsiveness, dark mode, scroll animations, and a functional contact form.</p>
+    </div>
+  
+    <div class="project">
+      <h3>Product Landing Page (Mini Project)</h3>
+      <p>A single-page layout built using HTML and CSS to showcase a fictional product with sections like features, pricing, and testimonials.</p>
+    </div>
+  
+    <div class="project">
+      <h3>Spring MVC Mini Project (Under Progress)</h3>
+      <p>Currently working on a Java-based web application using Spring Framework and JSP to build a CRUD application with MySQL integration.</p>
+    </div>
+  </section>
+  
+
+  <section id="contact">
+    <h2><mark>Contact Me</mark></h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="msg"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
