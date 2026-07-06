@@ -1,102 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your name  | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archana Racharla | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Archana Racharla</h1>
-    <nav class="nav-boxes">
-      <a href="#home"><div class=box>🏠 Home</div></a>
-      <a href="#about"><div class=box>👤 About</div></a>
-      <a href="#skills"><div class=box>🛠️ Skills</div></a>
-      <a href="#projects"><div class=box>📁 Projects</div></a>
-      <a href="#contact"><div class=box>📬 Contact</div></a>
-    </nav>
-     
-    <a href="Racharla.Archana-Resume.pdf" download class="download-btn">Download Resume</a>
 
-    <button id="darkModeToggle">🌙 Dark Mode</button>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AR<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-  <section id="welcome" data-aos="fade-up">
-    <h2><mark>Welcome to My Portfolio</mark></h2>
-    <p>
-      Hi there, and thanks for visiting! This is a place where I showcase my journey as a software engineer. From developing clean, efficient code to creating full-stack applications, you'll find a collection of projects that reflect my skills and passion for technology.
-    </p>
-    <p>
-      I believe in continuous learning, and this portfolio highlights the work that demonstrates my expertise in Core Java, Spring Framework, and full-stack web development. Each project is a step toward solving real-world problems through innovative solutions.
-    </p>
-    <p>
-      Take your time to explore, and if you have any questions or would like to collaborate, don’t hesitate to reach out. I look forward to connecting with you!
-    </p>
-    <p><a href="#contact">Let's Connect</a></p>
-  </section>
-  
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Archana Racharla</span></h1>
+            <p class="subtitle">Software Engineer & Full-Stack Developer</p>
+            <p class="hero-description">
+                I build clean, efficient code and turn complex problems into elegant web applications. Specializing in Core Java, Spring Framework, and full-stack development.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                <a href="Racharla.Archana-Resume.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Download Resume</a>
+            </div>
+        </div>
+    </section>
 
-  <section id="about" data-aos="fade-up">
-    <h2><mark>About Me</mark></h2>
-    <p>
-      Hello! I’m Racharla Archana, an aspiring software engineer with a solid foundation in Core Java, Spring Framework, and full-stack web development. With a Bachelor’s degree in Mathematics, Statistics, and Computer Science, I’ve cultivated a strong analytical and technical mindset.
-    </p>
-    <p>
-      I recently worked as a Technical Support Engineer at Gigmo Solutions Pvt Ltd, where I managed Office 365 environments and improved support ticket resolution by 30%. I’m now looking to apply my skills in a dynamic development role where I can solve real-world problems through clean and efficient code.
-    </p>
-    <p>
-      Outside of tech, I enjoy dancing, singing, and sketching — and I love giving technical presentations!
-    </p>
-  </section>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-text">
+                <p>Hello! I’m an aspiring software engineer with a strong analytical mindset grounded in a Bachelor’s degree in Mathematics, Statistics, and Computer Science. I love building practical, real-world solutions through clean code.</p>
+                <p>Recently, I worked as a Technical Support Engineer at Gigmo Solutions Pvt Ltd, where I optimized system flows and improved support ticket resolution efficiency by 30%. Today, I focus heavily on full-stack Java architectures and creating engaging user interfaces.</p>
+                <p class="hobbies"><strong>Beyond coding:</strong> <i class="fas fa-palette"></i> Sketching | <i class="fas fa-music"></i> Singing | <i class="fas fa-rebel"></i> Dancing</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="skills" data-aos="fade-up">
-    <h2><mark> Skills</mark></h2>
-    <ul style="list-style-type:none;">
-      <li>✔️ Programming: Core Java</li>
-      <li>✔️ Web Development: HTML, CSS, JavaScript, JSP, Servlets</li>
-      <li>✔️ Frameworks: Spring Framework (3-layer architecture)</li>
-      <li>✔️ Database: MySQL, JDBC</li>
-      <li>✔️ Tools: Postman, Visual Studio Code, Eclipse</li>
-      <li>✔️ Platforms: Windows, Office 365, Active Directory</li>
-    </ul>
-  </section>
-  
-  <section id="projects" data-aos="fade-up">
- <h2><mark>Projects</mark></h2>
-  
-    <div class="project">
-      <h3>Responsive Portfolio Website</h3>
-      <p>This portfolio itself is a live demonstration of my HTML, CSS, and JavaScript skills. It includes mobile responsiveness, dark mode, scroll animations, and a functional contact form.</p>
-    </div>
-  
-    <div class="project">
-      <h3>Product Landing Page (Mini Project)</h3>
-      <p>A single-page layout built using HTML and CSS to showcase a fictional product with sections like features, pricing, and testimonials.</p>
-    </div>
-  
-    <div class="project">
-      <h3>Spring MVC Mini Project (Under Progress)</h3>
-      <p>Currently working on a Java-based web application using Spring Framework and JSP to build a CRUD application with MySQL integration.</p>
-    </div>
-  </section>
-  
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-java skill-icon"></i>
+                    <h3>Languages</h3>
+                    <p>Core Java</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>HTML5, CSS3, JavaScript (ES6), JSP, Servlets</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-layer-group skill-icon"></i>
+                    <h3>Frameworks</h3>
+                    <p>Spring Framework (3-Layer Architecture), JDBC</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>Databases & Tools</h3>
+                    <p>MySQL, Postman, Git, VS Code, Eclipse</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2><mark>Contact Me</mark></h2>
-    <form onsubmit="submitForm(event)">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="msg"></p>
-  </section>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-tag">Java / Web</span>
+                        <h3>Spring MVC CRUD Application</h3>
+                        <p>A web application built using the Spring Framework and JSP, creating a full-featured CRUD system backed by a MySQL database layer.</p>
+                        <div class="project-status"><span class="dot"></span> In Progress</div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-tag">Frontend</span>
+                        <h3>Responsive Portfolio Website</h3>
+                        <p>This exact live space built from scratch using clean, modern HTML5, semantic CSS layouts, custom interactions, and a dark/light UI toggle.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-tag">UI / Web</span>
+                        <h3>Product Landing Page</h3>
+                        <p>A single-page layout designed to feature complex responsive design principles, custom CSS animations, and polished conversion forms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
-  </footer>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Have a question or want to collaborate? Drop me a message!</p>
+            <div class="contact-wrapper">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 Archana Racharla. Built with passion & clean code.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
