@@ -1,34 +1,36 @@
-// 🌙 Dark Mode Toggle
-const toggle = document.getElementById("darkModeToggle");
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const icon = themeToggle.querySelector('i');
+    
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('light-theme');
+        
+        if (document.body.classList.contains('light-theme')) {
+            icon.className = 'fas fa-moon'; 
+        } else {
+            icon.className = 'fas fa-sun';  
+        }
+    });
 
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  toggle.textContent = document.body.classList.contains("dark-mode")
-    ? "☀️ Light Mode"
-    : "🌙 Dark Mode";
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+        let currentSectionId = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            // Evaluates active screen section location offset
+            if (pageYOffset >= sectionTop - 160) {
+                currentSectionId = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(currentSectionId)) {
+                link.classList.add('active');
+            }
+        });
+    });
 });
-
-// 📩 Contact Form Submission
-function submitForm(event) {
-  event.preventDefault();
-
-  // Get form input fields
-  const nameInput = document.querySelector('input[type="text"]');
-  const emailInput = document.querySelector('input[type="email"]');
-  const messageTextarea = document.querySelector('textarea');
-  const msg = document.getElementById("msg");
-
-  // Show confirmation message
-  msg.innerText = "Thank you! Your message has been sent.";
-
-  // Clear the form fields
-  nameInput.value = "";
-  emailInput.value = "";
-  messageTextarea.value = "";
-
-  // Remove message after 3 seconds
-  setTimeout(() => {
-    msg.innerText = "";
-  }, 3000);
-}
-
